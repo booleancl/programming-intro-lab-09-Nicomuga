@@ -16,5 +16,7 @@ class Point:
         distance_x = self.x - other_point.x
         distance_y = self.y - other_point.y
 
+#Para evitar utilizar el **(1/2) que significa raiz cuadradada. Se puede importar el modulo math y utilizar la funcion math.sqrt de esta forma math.sqrt(distance_x**2 + distance_y**2)
         distance= (distance_x**2 + distance_y**2)**(1/2)
+
         return distance
